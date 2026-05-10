@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fpsdisplay",
+  "version": "${version}",
+  "name": "FPS Display",
+  "description": "A customizable FPS counter overlay for Minecraft 26.1.2.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fpsdisplay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.fpsdisplay.FpsDisplayMod"],
+    "modmenu": ["com.example.fpsdisplay.ModMenuIntegration"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.20.0",
+    "fabric-api": "*",
+    "minecraft": "~26.1.2",
+    "cloth-config2": "*",
+    "modmenu": "*"
+  }
+}
